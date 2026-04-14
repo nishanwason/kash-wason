@@ -90,8 +90,8 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-navy-deep">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy/50 to-navy-deep" />
+      <section className="relative bg-black">
+        <div className="absolute inset-0 bg-gradient-to-br from-black/50 to-black" />
         <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
         <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
           <div className="max-w-3xl">
@@ -111,7 +111,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Offers */}
-      <section className="bg-dark">
+      <section className="bg-dark-card-card">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24 space-y-12">
           {offers.map((offer) => (
             <div
@@ -167,7 +167,7 @@ export default function ServicesPage() {
 
               <Link
                 href="/contact"
-                className="inline-block bg-gold text-navy-deep px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors"
+                className="inline-block bg-gold text-black px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors"
               >
                 {offer.cta}
               </Link>
@@ -177,7 +177,7 @@ export default function ServicesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-navy-deep">
+      <section className="bg-black">
         <div className="max-w-3xl mx-auto px-4 py-20 md:py-24">
           <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-12 text-center">
             Frequently Asked <span className="text-gold">Questions</span>

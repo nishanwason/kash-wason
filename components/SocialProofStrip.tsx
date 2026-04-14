@@ -73,14 +73,14 @@ export default function SocialProofStrip() {
         (ref as React.MutableRefObject<HTMLElement | null>).current = el;
         (sectionRef as React.MutableRefObject<HTMLDivElement | null>).current = el;
       }}
-      className="relative overflow-hidden bg-dark border-y border-gold/10"
+      className="relative overflow-hidden bg-dark-card border-y border-white/5"
     >
       {/* Mouse-follow glow */}
       <div
         ref={glowRef}
         className="pointer-events-none absolute w-[500px] h-[500px] rounded-full blur-3xl transition-opacity duration-700 opacity-0"
         style={{
-          background: "radial-gradient(circle, rgba(207,183,120,0.15) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(207,183,120,0.1) 0%, transparent 70%)",
         }}
       />
 
@@ -95,15 +95,15 @@ export default function SocialProofStrip() {
               style={{ transitionDelay: `${i * 200}ms` }}
             >
               <div className="relative">
-                <div className="absolute inset-0 bg-gold/20 rounded-full blur-2xl scale-[2] group-hover:scale-[2.5] transition-transform duration-700" />
-                <div className="relative w-16 h-16 rounded-full flex items-center justify-center border border-gold/20 group-hover:border-gold/50 transition-all duration-500 bg-gold/5">
+                <div className="absolute inset-0 bg-gold/15 rounded-full blur-2xl scale-[2] group-hover:scale-[2.5] transition-transform duration-700" />
+                <div className="relative w-16 h-16 rounded-full flex items-center justify-center border border-white/10 group-hover:border-gold/30 transition-all duration-500 bg-white/5">
                   <item.icon className="text-gold group-hover:scale-110 transition-transform duration-300" size={28} />
                 </div>
               </div>
-              <span className="text-white/80 text-sm md:text-base font-heading font-bold uppercase tracking-wider text-center">
+              <span className="text-white/70 text-sm md:text-base font-heading font-bold uppercase tracking-wider text-center">
                 {item.text}
               </span>
-              <div className="h-[2px] w-8 rounded-full bg-gold/30 group-hover:w-16 group-hover:bg-gold/60 transition-all duration-500" />
+              <div className="h-px w-8 bg-gold/20 group-hover:w-16 group-hover:bg-gold/50 transition-all duration-500" />
             </div>
           ))}
         </div>

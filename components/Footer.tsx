@@ -3,7 +3,7 @@ import { InstagramIcon, YouTubeIcon, FacebookIcon } from "./SocialIcons";
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-deep border-t-4 border-gold">
+    <footer className="bg-black border-t border-gold/20">
       <div className="max-w-6xl mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
@@ -11,7 +11,7 @@ export default function Footer() {
             <h3 className="font-heading text-xl font-bold text-gold tracking-widest uppercase mb-3">
               Kash Wason
             </h3>
-            <p className="text-white/50 text-sm leading-relaxed">
+            <p className="text-white/40 text-sm leading-relaxed">
               Helping entrepreneurs launch and scale profitable Airbnb arbitrage
               businesses powered by AI automation.
             </p>
@@ -32,7 +32,7 @@ export default function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-gold/70 hover:text-gold text-sm transition-colors font-heading uppercase tracking-wider"
+                  className="text-gold/60 hover:text-gold text-sm transition-colors font-heading uppercase tracking-wider"
                 >
                   {link.label}
                 </Link>
@@ -45,7 +45,7 @@ export default function Footer() {
             <h4 className="font-heading font-bold text-white uppercase tracking-wider text-sm mb-4">
               Connect
             </h4>
-            <p className="text-white/50 text-sm mb-4">
+            <p className="text-white/40 text-sm mb-4">
               <a href="tel:9252019811" className="hover:text-gold transition-colors">
                 (925) 201-9811
               </a>
@@ -55,7 +55,7 @@ export default function Footer() {
                 href="https://instagram.com/kashwason"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gold/60 hover:text-gold transition-colors"
+                className="text-gold/50 hover:text-gold transition-colors"
                 aria-label="Instagram"
               >
                 <InstagramIcon size={20} />
@@ -64,7 +64,7 @@ export default function Footer() {
                 href="https://youtube.com/@kashwason"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gold/60 hover:text-gold transition-colors"
+                className="text-gold/50 hover:text-gold transition-colors"
                 aria-label="YouTube"
               >
                 <YouTubeIcon size={20} />
@@ -73,7 +73,7 @@ export default function Footer() {
                 href="https://facebook.com/kashwason"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gold/60 hover:text-gold transition-colors"
+                className="text-gold/50 hover:text-gold transition-colors"
                 aria-label="Facebook"
               >
                 <FacebookIcon size={20} />
@@ -82,7 +82,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gold/20 mt-10 pt-6 text-center text-white/30 text-sm font-heading uppercase tracking-wider">
+        <div className="border-t border-white/5 mt-10 pt-6 text-center text-white/20 text-sm font-heading uppercase tracking-wider">
           &copy; 2026 Kash Wason. All rights reserved.
         </div>
       </div>

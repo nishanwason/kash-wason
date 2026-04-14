@@ -38,11 +38,11 @@ export default function HeroSection() {
     function initOrbs() {
       orbs.length = 0;
       const colors = [
-        "rgba(207,183,120,0.07)",
-        "rgba(40,26,112,0.15)",
-        "rgba(207,183,120,0.05)",
-        "rgba(210,9,33,0.04)",
-        "rgba(24,11,88,0.12)",
+        "rgba(207,183,120,0.04)",
+        "rgba(207,183,120,0.03)",
+        "rgba(255,255,255,0.02)",
+        "rgba(207,183,120,0.02)",
+        "rgba(255,255,255,0.01)",
       ];
       for (let i = 0; i < 5; i++) {
         orbs.push({
@@ -59,12 +59,8 @@ export default function HeroSection() {
     function draw() {
       ctx!.clearRect(0, 0, width, height);
 
-      const bg = ctx!.createLinearGradient(0, 0, width, height);
-      bg.addColorStop(0, "#0a0628");
-      bg.addColorStop(0.4, "#180B58");
-      bg.addColorStop(0.7, "#281A70");
-      bg.addColorStop(1, "#0a0628");
-      ctx!.fillStyle = bg;
+      // Pure black base
+      ctx!.fillStyle = "#000000";
       ctx!.fillRect(0, 0, width, height);
 
       for (const orb of orbs) {
@@ -101,16 +97,13 @@ export default function HeroSection() {
     <section className="relative overflow-hidden min-h-[90vh] flex items-center">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
-      {/* Overlay gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-navy-deep/80" />
-
-      {/* Gold accent line */}
-      <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+      {/* Bottom gold accent line */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
       <div className="relative max-w-6xl mx-auto px-4 py-24 md:py-32 w-full">
         <div className="max-w-3xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 border border-gold/30 rounded-none px-4 py-1.5 mb-8">
+          <div className="inline-flex items-center gap-2 border border-gold/20 px-4 py-1.5 mb-8">
             <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
             <span className="text-xs font-heading font-semibold uppercase tracking-[0.2em] text-gold">
               Airbnb Arbitrage + AI
@@ -123,7 +116,7 @@ export default function HeroSection() {
             Airbnb Empire{" "}
             <span className="text-gold">With AI.</span>
           </h1>
-          <p className="text-lg md:text-xl text-white/60 mb-10 max-w-2xl leading-relaxed">
+          <p className="text-lg md:text-xl text-white/50 mb-10 max-w-2xl leading-relaxed">
             I teach entrepreneurs how to launch and scale profitable Airbnb
             arbitrage businesses — powered by AI automation for pricing,
             guest communication, and operations — without owning a single property.
@@ -131,13 +124,13 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/contact"
-              className="bg-gold text-navy-deep px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm text-center hover:bg-gold-light transition-colors"
+              className="bg-gold text-black px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm text-center hover:bg-gold-light transition-colors"
             >
               Book a Free Call
             </Link>
             <Link
               href="/services"
-              className="border-2 border-white/20 text-white px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm text-center hover:border-gold/50 hover:text-gold transition-colors"
+              className="border border-white/15 text-white px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm text-center hover:border-gold/40 hover:text-gold transition-colors"
             >
               See How It Works
             </Link>

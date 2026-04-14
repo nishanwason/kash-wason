@@ -37,7 +37,7 @@ export default function Home() {
       <SocialProofStrip />
 
       {/* About Teaser */}
-      <section className="bg-navy-deep">
+      <section className="bg-black">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">
@@ -60,7 +60,7 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="bg-dark">
+      <section className="bg-dark-card">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">

@@ -36,8 +36,8 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-navy-deep">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy/50 to-navy-deep" />
+      <section className="relative bg-black">
+        <div className="absolute inset-0 bg-gradient-to-br from-black/50 to-black" />
         <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
         <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
           <div className="max-w-3xl">
@@ -53,7 +53,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story */}
-      <section className="bg-dark">
+      <section className="bg-dark-card">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="max-w-3xl mx-auto space-y-6 text-white/60 leading-relaxed">
             <p className="text-lg text-white/80">
@@ -90,7 +90,7 @@ export default function AboutPage() {
       </section>
 
       {/* Coaching Philosophy */}
-      <section className="bg-navy-deep">
+      <section className="bg-black">
         <div className="absolute left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="text-center mb-12">
@@ -123,7 +123,7 @@ export default function AboutPage() {
       </section>
 
       {/* Personal */}
-      <section className="bg-dark">
+      <section className="bg-dark-card">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-6">
@@ -137,7 +137,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-gold text-navy-deep px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors"
+              className="inline-block bg-gold text-black px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors"
             >
               Ready to Start? Let&apos;s Talk
             </Link>

@@ -79,8 +79,8 @@ export default function ResultsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-navy-deep">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy/50 to-navy-deep" />
+      <section className="relative bg-black">
+        <div className="absolute inset-0 bg-gradient-to-br from-black/50 to-black" />
         <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
         <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
           <div className="max-w-3xl">
@@ -101,7 +101,7 @@ export default function ResultsPage() {
       </section>
 
       {/* Case Studies */}
-      <section className="bg-dark">
+      <section className="bg-dark-card">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-12 text-center">
             Client <span className="text-gold">Transformations</span>
@@ -145,7 +145,7 @@ export default function ResultsPage() {
       </section>
 
       {/* More Testimonials */}
-      <section className="bg-navy-deep">
+      <section className="bg-black">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-12 text-center">
             More Client <span className="text-gold">Wins</span>

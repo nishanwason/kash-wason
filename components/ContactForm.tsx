@@ -35,7 +35,7 @@ export default function ContactForm() {
 
   if (status === "sent") {
     return (
-      <div className="border border-gold/30 bg-gold/5 p-8 text-center">
+      <div className="border border-gold/20 bg-gold/5 p-8 text-center">
         <p className="text-gold font-heading font-bold text-lg uppercase tracking-wider">
           Message sent! Kash will get back to you soon.
         </p>
@@ -54,7 +54,7 @@ export default function ContactForm() {
           id="name"
           name="name"
           required
-          className="w-full bg-white/5 border border-gold/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 transition-colors"
+          className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-gold/40 transition-colors"
         />
       </div>
       <div>
@@ -66,7 +66,7 @@ export default function ContactForm() {
           id="email"
           name="email"
           required
-          className="w-full bg-white/5 border border-gold/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 transition-colors"
+          className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-gold/40 transition-colors"
         />
       </div>
       <div>
@@ -77,7 +77,7 @@ export default function ContactForm() {
           type="tel"
           id="phone"
           name="phone"
-          className="w-full bg-white/5 border border-gold/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 transition-colors"
+          className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-gold/40 transition-colors"
         />
       </div>
       <div>
@@ -89,13 +89,13 @@ export default function ContactForm() {
           name="message"
           rows={4}
           required
-          className="w-full bg-white/5 border border-gold/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 transition-colors resize-none"
+          className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-gold/40 transition-colors resize-none"
         />
       </div>
       <button
         type="submit"
         disabled={status === "sending"}
-        className="w-full bg-gold text-navy-deep px-8 py-4 font-heading font-bold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
+        className="w-full bg-gold text-black px-8 py-4 font-heading font-bold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
       >
         <Send size={18} />
         {status === "sending" ? "Sending..." : "Send Message"}
