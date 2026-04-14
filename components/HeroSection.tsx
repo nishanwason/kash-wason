@@ -102,7 +102,7 @@ export default function HeroSection() {
 
       <div className="relative max-w-6xl mx-auto px-4 w-full flex flex-col items-center text-center">
         {/* Big centered name */}
-        <h2 className="font-heading text-7xl md:text-9xl lg:text-[10rem] font-black uppercase text-gold tracking-[0.2em] mb-8 leading-none">
+        <h2 className="font-heading text-8xl md:text-[10rem] lg:text-[12rem] font-black uppercase text-white tracking-[0.2em] mb-8 leading-none">
           Kash Wason
         </h2>
 
