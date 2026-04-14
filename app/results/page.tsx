@@ -113,8 +113,8 @@ export default function ResultsPage() {
                 className="bg-white/5 border border-gold/10 p-8 md:p-10"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div className="bg-red/10 border border-red/20 p-5">
-                    <p className="text-xs font-heading font-bold text-red uppercase tracking-wider mb-1">
+                  <div className="bg-white/5 border border-white/10 p-5">
+                    <p className="text-xs font-heading font-bold text-white/60 uppercase tracking-wider mb-1">
                       Before
                     </p>
                     <p className="text-white/60">{cs.before}</p>

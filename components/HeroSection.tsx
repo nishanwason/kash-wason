@@ -94,27 +94,30 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden min-h-[90vh] flex items-center">
+    <section className="relative overflow-hidden min-h-screen flex items-center justify-center">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
       {/* Bottom gold accent line */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
-      <div className="relative max-w-6xl mx-auto px-4 py-24 md:py-32 w-full flex flex-col items-center text-center">
+      <div className="relative max-w-6xl mx-auto px-4 w-full flex flex-col items-center text-center">
         {/* Big centered name */}
-        <h2 className="font-heading text-6xl md:text-8xl lg:text-9xl font-black uppercase text-gold tracking-[0.15em] mb-10 leading-none">
+        <h2 className="font-heading text-7xl md:text-9xl lg:text-[10rem] font-black uppercase text-gold tracking-[0.2em] mb-8 leading-none">
           Kash Wason
         </h2>
 
+        {/* Thin gold divider */}
+        <div className="w-24 h-px bg-gold/50 mb-8" />
+
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 border border-gold/20 px-4 py-1.5 mb-8">
+        <div className="inline-flex items-center gap-2 border border-gold/20 px-5 py-2 mb-8">
           <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
-          <span className="text-xs font-heading font-semibold uppercase tracking-[0.2em] text-gold">
+          <span className="text-xs font-heading font-semibold uppercase tracking-[0.25em] text-gold">
             Airbnb Arbitrage + AI
           </span>
         </div>
 
-        <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-black uppercase text-white leading-[0.95] mb-6 tracking-tight max-w-4xl">
+        <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-black uppercase text-white leading-[0.95] mb-6 tracking-tight max-w-4xl">
           Build a Cash-Flowing Airbnb Empire{" "}
           <span className="text-gold">With AI.</span>
         </h1>

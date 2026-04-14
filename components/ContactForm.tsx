@@ -101,7 +101,7 @@ export default function ContactForm() {
         {status === "sending" ? "Sending..." : "Send Message"}
       </button>
       {status === "error" && (
-        <p className="text-red text-sm text-center">
+        <p className="text-gold text-sm text-center">
           Something went wrong. Please try again or call (925) 201-9811.
         </p>
       )}
