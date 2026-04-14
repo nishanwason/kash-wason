@@ -12,6 +12,7 @@
   --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
   --font-heading: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-title: var(--font-bebas), "Bebas Neue", sans-serif;
 }
 
 body {
