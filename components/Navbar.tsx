@@ -17,11 +17,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-white/5">
-      <nav className="max-w-6xl mx-auto px-4 flex items-center justify-between h-18">
-        <Link href="/" className="font-heading text-xl font-bold text-gold tracking-widest uppercase">
-          Kash Wason
-        </Link>
-
+      <nav className="max-w-6xl mx-auto px-4 flex items-center justify-center h-18">
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
