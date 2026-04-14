@@ -94,15 +94,15 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden min-h-screen flex items-center justify-center">
+    <section className="relative overflow-hidden min-h-screen flex items-end justify-center pb-16 md:pb-24">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
       {/* Bottom gold accent line */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
-      <div className="relative max-w-6xl mx-auto px-4 w-full flex flex-col items-center text-center">
-        {/* Big centered name */}
-        <h2 className="font-heading text-8xl md:text-[10rem] lg:text-[12rem] font-black uppercase text-white tracking-[0.2em] mb-8 leading-none">
+      <div className="relative max-w-7xl mx-auto px-4 w-full flex flex-col items-center text-center">
+        {/* Big centered name — single line */}
+        <h2 className="font-heading text-[3.5rem] md:text-[7rem] lg:text-[9rem] xl:text-[11rem] font-black uppercase text-white tracking-[0.2em] mb-8 leading-none whitespace-nowrap">
           Kash Wason
         </h2>
 
