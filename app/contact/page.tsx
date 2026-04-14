@@ -35,17 +35,19 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-white to-blue-50">
-        <div className="max-w-6xl mx-auto px-4 py-20 md:py-28">
+      <section className="relative bg-navy-deep">
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/50 to-navy-deep" />
+        <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+        <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
           <div className="max-w-3xl">
-            <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
+            <p className="text-gold font-heading font-bold text-xs uppercase tracking-[0.2em] mb-3">
               Get In Touch
             </p>
-            <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-navy leading-tight mb-6">
+            <h1 className="font-heading text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
               Let&apos;s Talk About{" "}
-              <span className="text-primary">Your Growth</span>
+              <span className="text-gold">Your Growth</span>
             </h1>
-            <p className="text-lg text-navy/70 max-w-2xl">
+            <p className="text-lg text-white/60 max-w-2xl">
               Book a free discovery call or send me a message. I&apos;ll
               personally review your situation and help you figure out the best
               next step.
@@ -55,57 +57,57 @@ export default function ContactPage() {
       </section>
 
       {/* Booking */}
-      <section className="bg-white">
+      <section className="bg-dark">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-8 text-center">
-            Schedule Your Free Call
+          <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-8 text-center">
+            Schedule Your <span className="text-gold">Free Call</span>
           </h2>
           <BookingEmbed />
         </div>
       </section>
 
       {/* Contact Form + Info */}
-      <section className="bg-gray-50">
+      <section className="bg-navy-deep">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Form */}
             <div>
-              <h2 className="font-heading text-2xl font-bold text-navy mb-6">
-                Send a Message
+              <h2 className="font-heading text-2xl font-black text-white uppercase tracking-wider mb-6">
+                Send a <span className="text-gold">Message</span>
               </h2>
               <ContactForm />
             </div>
 
             {/* Info */}
             <div>
-              <h2 className="font-heading text-2xl font-bold text-navy mb-6">
-                Other Ways to Reach Me
+              <h2 className="font-heading text-2xl font-black text-white uppercase tracking-wider mb-6">
+                Other Ways to <span className="text-gold">Reach Me</span>
               </h2>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Phone className="text-primary" size={18} />
+                  <div className="w-10 h-10 bg-gold/10 flex items-center justify-center">
+                    <Phone className="text-gold" size={18} />
                   </div>
                   <div>
-                    <p className="text-sm text-navy/50">Phone</p>
+                    <p className="text-xs text-white/40 font-heading uppercase tracking-wider">Phone</p>
                     <a
                       href="tel:9252019811"
-                      className="font-medium text-navy hover:text-primary transition-colors"
+                      className="font-medium text-white hover:text-gold transition-colors"
                     >
                       (925) 201-9811
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Mail className="text-primary" size={18} />
+                  <div className="w-10 h-10 bg-gold/10 flex items-center justify-center">
+                    <Mail className="text-gold" size={18} />
                   </div>
                   <div>
-                    <p className="text-sm text-navy/50">Email</p>
+                    <p className="text-xs text-white/40 font-heading uppercase tracking-wider">Email</p>
                     <a
                       href="mailto:kash@kashwason.com"
-                      className="font-medium text-navy hover:text-primary transition-colors"
+                      className="font-medium text-white hover:text-gold transition-colors"
                     >
                       kash@kashwason.com
                     </a>
@@ -113,7 +115,9 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <h3 className="font-semibold text-navy mb-4">Follow Me</h3>
+              <h3 className="font-heading font-bold text-white uppercase tracking-wider text-sm mb-4">
+                Follow Me
+              </h3>
               <div className="space-y-3">
                 {socials.map((s) => (
                   <a
@@ -121,10 +125,10 @@ export default function ContactPage() {
                     href={s.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 text-navy/60 hover:text-primary transition-colors"
+                    className="flex items-center gap-3 text-gold/60 hover:text-gold transition-colors"
                   >
                     <s.icon size={20} />
-                    <span className="text-sm">
+                    <span className="text-sm font-heading uppercase tracking-wider">
                       {s.label} — {s.handle}
                     </span>
                   </a>

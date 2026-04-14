@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  User,
-  Users,
-  BookOpen,
-  CheckCircle,
-  ChevronDown,
-} from "lucide-react";
+import { User, Users, BookOpen, CheckCircle, ChevronDown } from "lucide-react";
 import CTABanner from "@/components/CTABanner";
 
 export const metadata: Metadata = {
@@ -92,17 +86,19 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-white to-blue-50">
-        <div className="max-w-6xl mx-auto px-4 py-20 md:py-28">
+      <section className="relative bg-navy-deep">
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/50 to-navy-deep" />
+        <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+        <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
           <div className="max-w-3xl">
-            <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
+            <p className="text-gold font-heading font-bold text-xs uppercase tracking-[0.2em] mb-3">
               Work With Me
             </p>
-            <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-navy leading-tight mb-6">
+            <h1 className="font-heading text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
               Choose the Path That{" "}
-              <span className="text-primary">Fits Your Goals</span>
+              <span className="text-gold">Fits Your Goals</span>
             </h1>
-            <p className="text-lg text-navy/70 max-w-2xl">
+            <p className="text-lg text-white/60 max-w-2xl">
               Every agent is different. That&apos;s why I offer multiple ways to
               work together — from hands-on 1:1 coaching to self-paced learning.
             </p>
@@ -111,47 +107,46 @@ export default function ServicesPage() {
       </section>
 
       {/* Offers */}
-      <section className="bg-white">
-        <div className="max-w-6xl mx-auto px-4 py-20 md:py-24 space-y-16">
+      <section className="bg-dark">
+        <div className="max-w-6xl mx-auto px-4 py-20 md:py-24 space-y-12">
           {offers.map((offer) => (
             <div
               key={offer.id}
               id={offer.id}
-              className="bg-gray-50 rounded-2xl p-8 md:p-12 scroll-mt-24"
+              className="bg-white/5 border border-gold/10 p-8 md:p-12 scroll-mt-24"
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-                  <offer.icon className="text-primary" size={24} />
+                <div className="w-12 h-12 bg-gold/10 flex items-center justify-center shrink-0">
+                  <offer.icon className="text-gold" size={24} />
                 </div>
                 <div>
-                  <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy">
+                  <h2 className="font-heading text-2xl md:text-3xl font-black text-white uppercase tracking-wider">
                     {offer.title}
                   </h2>
-                  <p className="text-primary font-medium">{offer.tagline}</p>
+                  <p className="text-gold font-heading font-semibold text-sm uppercase tracking-wider">
+                    {offer.tagline}
+                  </p>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div>
-                  <h3 className="font-semibold text-navy mb-2">
+                  <h3 className="font-heading font-bold text-white uppercase tracking-wider text-sm mb-2">
                     Who It&apos;s For
                   </h3>
-                  <p className="text-navy/60 leading-relaxed">{offer.who}</p>
+                  <p className="text-white/50 leading-relaxed">{offer.who}</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-navy mb-2">
+                  <h3 className="font-heading font-bold text-white uppercase tracking-wider text-sm mb-2">
                     What&apos;s Included
                   </h3>
                   <ul className="space-y-2">
                     {offer.includes.map((item) => (
                       <li
                         key={item}
-                        className="flex items-start gap-2 text-navy/60 text-sm"
+                        className="flex items-start gap-2 text-white/50 text-sm"
                       >
-                        <CheckCircle
-                          className="text-primary shrink-0 mt-0.5"
-                          size={16}
-                        />
+                        <CheckCircle className="text-gold shrink-0 mt-0.5" size={16} />
                         {item}
                       </li>
                     ))}
@@ -159,14 +154,16 @@ export default function ServicesPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 mb-6">
-                <h3 className="font-semibold text-navy mb-1">The Outcome</h3>
-                <p className="text-navy/60">{offer.outcome}</p>
+              <div className="bg-gold/5 border border-gold/10 p-6 mb-6">
+                <h3 className="font-heading font-bold text-gold uppercase tracking-wider text-sm mb-1">
+                  The Outcome
+                </h3>
+                <p className="text-white/60">{offer.outcome}</p>
               </div>
 
               <Link
                 href="/contact"
-                className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+                className="inline-block bg-gold text-navy-deep px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors"
               >
                 {offer.cta}
               </Link>
@@ -176,25 +173,25 @@ export default function ServicesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-gray-50">
+      <section className="bg-navy-deep">
         <div className="max-w-3xl mx-auto px-4 py-20 md:py-24">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-12 text-center">
-            Frequently Asked Questions
+          <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-12 text-center">
+            Frequently Asked <span className="text-gold">Questions</span>
           </h2>
           <div className="space-y-4">
             {faqs.map((faq) => (
               <details
                 key={faq.q}
-                className="bg-white rounded-xl border border-gray-100 group"
+                className="bg-white/5 border border-gold/10 group"
               >
-                <summary className="flex items-center justify-between p-6 cursor-pointer font-semibold text-navy">
+                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-bold text-white uppercase tracking-wider text-sm">
                   {faq.q}
                   <ChevronDown
                     size={20}
-                    className="text-navy/40 group-open:rotate-180 transition-transform"
+                    className="text-gold/50 group-open:rotate-180 transition-transform"
                   />
                 </summary>
-                <div className="px-6 pb-6 text-navy/60 leading-relaxed">
+                <div className="px-6 pb-6 text-white/50 leading-relaxed">
                   {faq.a}
                 </div>
               </details>

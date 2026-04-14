@@ -79,17 +79,19 @@ export default function ResultsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-white to-blue-50">
-        <div className="max-w-6xl mx-auto px-4 py-20 md:py-28">
+      <section className="relative bg-navy-deep">
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/50 to-navy-deep" />
+        <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+        <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
           <div className="max-w-3xl">
-            <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
+            <p className="text-gold font-heading font-bold text-xs uppercase tracking-[0.2em] mb-3">
               Results
             </p>
-            <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-navy leading-tight mb-6">
+            <h1 className="font-heading text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
               Real Agents.{" "}
-              <span className="text-primary">Real Results.</span>
+              <span className="text-gold">Real Results.</span>
             </h1>
-            <p className="text-lg text-navy/70 max-w-2xl">
+            <p className="text-lg text-white/60 max-w-2xl">
               Don&apos;t take my word for it — see the transformations from
               agents and brokers who put in the work.
             </p>
@@ -98,40 +100,40 @@ export default function ResultsPage() {
       </section>
 
       {/* Case Studies */}
-      <section className="bg-white">
+      <section className="bg-dark">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-12 text-center">
-            Client Transformations
+          <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-12 text-center">
+            Client <span className="text-gold">Transformations</span>
           </h2>
           <div className="space-y-8">
             {caseStudies.map((cs) => (
               <div
                 key={cs.name}
-                className="bg-gray-50 rounded-2xl p-8 md:p-10"
+                className="bg-white/5 border border-gold/10 p-8 md:p-10"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div className="bg-red-50 rounded-xl p-5">
-                    <p className="text-sm font-semibold text-red-600 mb-1">
+                  <div className="bg-red/10 border border-red/20 p-5">
+                    <p className="text-xs font-heading font-bold text-red uppercase tracking-wider mb-1">
                       Before
                     </p>
-                    <p className="text-navy/70">{cs.before}</p>
+                    <p className="text-white/60">{cs.before}</p>
                   </div>
-                  <div className="bg-green-50 rounded-xl p-5">
+                  <div className="bg-gold/5 border border-gold/20 p-5">
                     <div className="flex items-center gap-2 mb-1">
-                      <TrendingUp className="text-green-600" size={16} />
-                      <p className="text-sm font-semibold text-green-600">
+                      <TrendingUp className="text-gold" size={16} />
+                      <p className="text-xs font-heading font-bold text-gold uppercase tracking-wider">
                         After
                       </p>
                     </div>
-                    <p className="text-navy/70">{cs.after}</p>
+                    <p className="text-white/60">{cs.after}</p>
                   </div>
                 </div>
-                <blockquote className="text-navy/70 italic leading-relaxed mb-4">
+                <blockquote className="text-white/60 italic leading-relaxed mb-4 border-l-2 border-gold/30 pl-4">
                   &ldquo;{cs.quote}&rdquo;
                 </blockquote>
-                <p className="font-semibold text-navy">
+                <p className="font-heading font-bold text-gold uppercase tracking-wider text-sm">
                   {cs.name}{" "}
-                  <span className="font-normal text-navy/50">
+                  <span className="font-normal text-white/40">
                     — {cs.title}
                   </span>
                 </p>
@@ -142,10 +144,10 @@ export default function ResultsPage() {
       </section>
 
       {/* More Testimonials */}
-      <section className="bg-gray-50">
+      <section className="bg-navy-deep">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-12 text-center">
-            More Client Wins
+          <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-12 text-center">
+            More Client <span className="text-gold">Wins</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {moreTestimonials.map((t) => (

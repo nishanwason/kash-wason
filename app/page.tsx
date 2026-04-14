@@ -37,13 +37,13 @@ export default function Home() {
       <SocialProofStrip />
 
       {/* About Teaser */}
-      <section className="bg-white">
+      <section className="bg-navy-deep">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
-              Meet Kash Wason
+            <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">
+              Meet <span className="text-gold">Kash Wason</span>
             </h2>
-            <p className="text-navy/60 leading-relaxed mb-6">
+            <p className="text-white/50 leading-relaxed mb-6">
               Miami-based real estate coach with over a decade of experience
               helping agents ditch cold outreach and build businesses that
               attract clients on autopilot. Kash&apos;s no-fluff, results-driven
@@ -51,7 +51,7 @@ export default function Home() {
             </p>
             <Link
               href="/about"
-              className="text-primary font-semibold hover:opacity-80 transition-opacity"
+              className="text-gold font-heading font-bold text-xs uppercase tracking-wider hover:text-gold-light transition-colors"
             >
               Read My Story &rarr;
             </Link>
@@ -60,13 +60,13 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="bg-gray-50">
+      <section className="bg-dark">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
-              How I Can Help You
+            <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">
+              How I Can <span className="text-gold">Help You</span>
             </h2>
-            <p className="text-navy/60 max-w-2xl mx-auto">
+            <p className="text-white/50 max-w-2xl mx-auto">
               Whether you&apos;re a new agent or a seasoned broker, I have a
               program designed to help you scale.
             </p>

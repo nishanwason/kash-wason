@@ -1,5 +1,3 @@
-import { Quote } from "lucide-react";
-
 interface TestimonialCardProps {
   quote: string;
   name: string;
@@ -12,12 +10,13 @@ export default function TestimonialCard({
   title,
 }: TestimonialCardProps) {
   return (
-    <div className="bg-white border border-gray-100 rounded-2xl p-8">
-      <Quote className="text-primary/30 mb-4" size={32} />
-      <p className="text-navy/70 leading-relaxed mb-6">{quote}</p>
-      <div>
-        <p className="font-semibold text-navy">{name}</p>
-        <p className="text-sm text-navy/50">{title}</p>
+    <div className="bg-white/5 border border-gold/10 p-8 relative">
+      {/* Gold left accent */}
+      <div className="absolute left-0 top-4 bottom-4 w-1 bg-gold/40" />
+      <p className="text-white/70 leading-relaxed mb-6 pl-4 italic">&ldquo;{quote}&rdquo;</p>
+      <div className="pl-4">
+        <p className="font-heading font-bold text-gold uppercase tracking-wider text-sm">{name}</p>
+        <p className="text-xs text-white/40 uppercase tracking-wider mt-1">{title}</p>
       </div>
     </div>
   );

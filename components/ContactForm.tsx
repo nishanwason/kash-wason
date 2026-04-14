@@ -35,8 +35,8 @@ export default function ContactForm() {
 
   if (status === "sent") {
     return (
-      <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
-        <p className="text-green-800 font-semibold text-lg">
+      <div className="border border-gold/30 bg-gold/5 p-8 text-center">
+        <p className="text-gold font-heading font-bold text-lg uppercase tracking-wider">
           Message sent! Kash will get back to you soon.
         </p>
       </div>
@@ -46,7 +46,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-navy mb-1.5">
+        <label htmlFor="name" className="block text-xs font-heading font-bold text-white/70 uppercase tracking-wider mb-1.5">
           Name
         </label>
         <input
@@ -54,11 +54,11 @@ export default function ContactForm() {
           id="name"
           name="name"
           required
-          className="w-full border border-gray-200 rounded-lg px-4 py-3 text-navy focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+          className="w-full bg-white/5 border border-gold/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 transition-colors"
         />
       </div>
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-navy mb-1.5">
+        <label htmlFor="email" className="block text-xs font-heading font-bold text-white/70 uppercase tracking-wider mb-1.5">
           Email
         </label>
         <input
@@ -66,22 +66,22 @@ export default function ContactForm() {
           id="email"
           name="email"
           required
-          className="w-full border border-gray-200 rounded-lg px-4 py-3 text-navy focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+          className="w-full bg-white/5 border border-gold/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 transition-colors"
         />
       </div>
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-navy mb-1.5">
+        <label htmlFor="phone" className="block text-xs font-heading font-bold text-white/70 uppercase tracking-wider mb-1.5">
           Phone
         </label>
         <input
           type="tel"
           id="phone"
           name="phone"
-          className="w-full border border-gray-200 rounded-lg px-4 py-3 text-navy focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+          className="w-full bg-white/5 border border-gold/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 transition-colors"
         />
       </div>
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-navy mb-1.5">
+        <label htmlFor="message" className="block text-xs font-heading font-bold text-white/70 uppercase tracking-wider mb-1.5">
           What are you struggling with?
         </label>
         <textarea
@@ -89,19 +89,19 @@ export default function ContactForm() {
           name="message"
           rows={4}
           required
-          className="w-full border border-gray-200 rounded-lg px-4 py-3 text-navy focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors resize-none"
+          className="w-full bg-white/5 border border-gold/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 transition-colors resize-none"
         />
       </div>
       <button
         type="submit"
         disabled={status === "sending"}
-        className="w-full bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-2 disabled:opacity-60"
+        className="w-full bg-gold text-navy-deep px-8 py-4 font-heading font-bold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
       >
         <Send size={18} />
         {status === "sending" ? "Sending..." : "Send Message"}
       </button>
       {status === "error" && (
-        <p className="text-red-600 text-sm text-center">
+        <p className="text-red text-sm text-center">
           Something went wrong. Please try again or call (925) 201-9811.
         </p>
       )}

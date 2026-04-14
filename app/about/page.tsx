@@ -13,26 +13,22 @@ const pillars = [
   {
     icon: Target,
     title: "Inbound-First",
-    description:
-      "Stop chasing. Build a brand that makes clients come to you.",
+    description: "Stop chasing. Build a brand that makes clients come to you.",
   },
   {
     icon: Zap,
     title: "No Fluff",
-    description:
-      "Every strategy is battle-tested. No theory — only what works.",
+    description: "Every strategy is battle-tested. No theory — only what works.",
   },
   {
     icon: TrendingUp,
     title: "Authority Building",
-    description:
-      "Position yourself as the go-to agent in your market through content and social proof.",
+    description: "Position yourself as the go-to agent in your market through content and social proof.",
   },
   {
     icon: Shield,
     title: "Accountability",
-    description:
-      "Consistent support and structure to keep you executing week after week.",
+    description: "Consistent support and structure to keep you executing week after week.",
   },
 ];
 
@@ -40,25 +36,27 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-white to-blue-50">
-        <div className="max-w-6xl mx-auto px-4 py-20 md:py-28">
+      <section className="relative bg-navy-deep">
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/50 to-navy-deep" />
+        <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+        <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
           <div className="max-w-3xl">
-            <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
+            <p className="text-gold font-heading font-bold text-xs uppercase tracking-[0.2em] mb-3">
               About Kash
             </p>
-            <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-navy leading-tight mb-6">
+            <h1 className="font-heading text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
               From Agent to Coach —{" "}
-              <span className="text-primary">Building What I Wish I Had</span>
+              <span className="text-gold">Building What I Wish I Had</span>
             </h1>
           </div>
         </div>
       </section>
 
       {/* Story */}
-      <section className="bg-white">
+      <section className="bg-dark">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
-          <div className="max-w-3xl mx-auto space-y-6 text-navy/70 leading-relaxed">
-            <p className="text-lg">
+          <div className="max-w-3xl mx-auto space-y-6 text-white/60 leading-relaxed">
+            <p className="text-lg text-white/80">
               I got into real estate the same way most people do — hungry,
               hustling, and making a hundred cold calls a day hoping someone
               would pick up. I built a business, but it was exhausting and
@@ -82,7 +80,7 @@ export default function AboutPage() {
               from day one: one where clients come to you, where your brand does
               the selling, and where you&apos;re in control of your pipeline.
             </p>
-            <p className="font-semibold text-navy text-lg">
+            <p className="font-heading font-bold text-gold text-lg uppercase tracking-wider">
               No fluff. No gimmicks. Just proven strategies that work.
             </p>
           </div>
@@ -90,13 +88,14 @@ export default function AboutPage() {
       </section>
 
       {/* Coaching Philosophy */}
-      <section className="bg-gray-50">
+      <section className="bg-navy-deep">
+        <div className="absolute left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
-              My Coaching Philosophy
+            <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">
+              My Coaching <span className="text-gold">Philosophy</span>
             </h2>
-            <p className="text-navy/60 max-w-2xl mx-auto">
+            <p className="text-white/50 max-w-2xl mx-auto">
               Four pillars that drive everything I teach.
             </p>
           </div>
@@ -104,15 +103,15 @@ export default function AboutPage() {
             {pillars.map((pillar) => (
               <div
                 key={pillar.title}
-                className="bg-white rounded-2xl p-8 border border-gray-100"
+                className="bg-white/5 border border-gold/10 p-8 group hover:border-gold/30 transition-colors"
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
-                  <pillar.icon className="text-primary" size={24} />
+                <div className="w-12 h-12 bg-gold/10 flex items-center justify-center mb-5">
+                  <pillar.icon className="text-gold" size={24} />
                 </div>
-                <h3 className="font-heading font-bold text-navy mb-2">
+                <h3 className="font-heading font-bold text-white uppercase tracking-wider text-sm mb-2">
                   {pillar.title}
                 </h3>
-                <p className="text-navy/60 text-sm leading-relaxed">
+                <p className="text-white/50 text-sm leading-relaxed">
                   {pillar.description}
                 </p>
               </div>
@@ -122,13 +121,13 @@ export default function AboutPage() {
       </section>
 
       {/* Personal */}
-      <section className="bg-white">
+      <section className="bg-dark">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-6">
-              Beyond the Business
+            <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-6">
+              Beyond the <span className="text-gold">Business</span>
             </h2>
-            <p className="text-navy/60 leading-relaxed mb-8">
+            <p className="text-white/50 leading-relaxed mb-8">
               When I&apos;m not coaching, you&apos;ll find me exploring Miami&apos;s food
               scene, at the gym, or creating content. I believe your personal
               brand should be an authentic extension of who you are — and I
@@ -136,7 +135,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+              className="inline-block bg-gold text-navy-deep px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors"
             >
               Ready to Scale? Let&apos;s Talk
             </Link>

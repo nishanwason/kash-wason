@@ -35,13 +35,14 @@ const testimonials = [
 
 export default function TestimonialsGrid() {
   return (
-    <section className="bg-gray-50">
+    <section className="bg-navy-deep">
       <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
         <div className="text-center mb-12">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
-            Hear It From the Agents Themselves
+          <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">
+            Hear It From the{" "}
+            <span className="text-gold">Agents Themselves</span>
           </h2>
-          <p className="text-navy/60 max-w-2xl mx-auto">
+          <p className="text-white/50 max-w-2xl mx-auto">
             These are real stories from real people who decided to bet on
             themselves and never looked back.
           </p>

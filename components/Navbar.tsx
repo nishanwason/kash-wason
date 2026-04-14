@@ -16,10 +16,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-      <nav className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
-        <Link href="/" className="font-heading text-xl font-bold text-navy">
-          KASH WASON
+    <header className="sticky top-0 z-50 bg-navy-deep/95 backdrop-blur-sm border-b border-gold/10">
+      <nav className="max-w-6xl mx-auto px-4 flex items-center justify-between h-18">
+        <Link href="/" className="font-heading text-xl font-bold text-gold tracking-widest uppercase">
+          Kash Wason
         </Link>
 
         {/* Desktop */}
@@ -28,14 +28,14 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-navy/70 hover:text-navy transition-colors"
+              className="text-xs font-heading font-semibold uppercase tracking-wider text-white/70 hover:text-gold transition-colors"
             >
               {link.label}
             </Link>
           ))}
           <Link
             href="/contact"
-            className="bg-primary text-white px-6 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="bg-gold text-navy-deep px-6 py-2.5 rounded font-heading font-bold text-xs uppercase tracking-wider hover:bg-gold-light transition-colors"
           >
             Book a Call
           </Link>
@@ -43,7 +43,7 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden p-2 text-navy"
+          className="md:hidden p-2 text-gold"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -53,12 +53,12 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-4 pb-4">
+        <div className="md:hidden bg-navy-deep border-t border-gold/10 px-4 pb-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="block py-3 text-navy/70 hover:text-navy font-medium"
+              className="block py-3 text-white/70 hover:text-gold font-heading font-semibold uppercase text-sm tracking-wider"
               onClick={() => setOpen(false)}
             >
               {link.label}
@@ -66,7 +66,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/contact"
-            className="block mt-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold text-center hover:opacity-90 transition-opacity"
+            className="block mt-2 bg-gold text-navy-deep px-6 py-3 rounded font-heading font-bold text-center uppercase text-sm tracking-wider hover:bg-gold-light transition-colors"
             onClick={() => setOpen(false)}
           >
             Book a Call
