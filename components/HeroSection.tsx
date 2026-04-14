@@ -100,41 +100,42 @@ export default function HeroSection() {
       {/* Bottom gold accent line */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
-      <div className="relative max-w-6xl mx-auto px-4 py-24 md:py-32 w-full">
-        <div className="max-w-3xl">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 border border-gold/20 px-4 py-1.5 mb-8">
-            <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
-            <span className="text-xs font-heading font-semibold uppercase tracking-[0.2em] text-gold">
-              Airbnb Arbitrage + AI
-            </span>
-          </div>
+      <div className="relative max-w-6xl mx-auto px-4 py-24 md:py-32 w-full flex flex-col items-center text-center">
+        {/* Big centered name */}
+        <h2 className="font-heading text-6xl md:text-8xl lg:text-9xl font-black uppercase text-gold tracking-[0.15em] mb-10 leading-none">
+          Kash Wason
+        </h2>
 
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black uppercase text-white leading-[0.95] mb-6 tracking-tight">
-            Build a Cash-Flowing
-            <br />
-            Airbnb Empire{" "}
-            <span className="text-gold">With AI.</span>
-          </h1>
-          <p className="text-lg md:text-xl text-white/50 mb-10 max-w-2xl leading-relaxed">
-            I teach entrepreneurs how to launch and scale profitable Airbnb
-            arbitrage businesses — powered by AI automation for pricing,
-            guest communication, and operations — without owning a single property.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/contact"
-              className="bg-gold text-black px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm text-center hover:bg-gold-light transition-colors"
-            >
-              Book a Free Call
-            </Link>
-            <Link
-              href="/services"
-              className="border border-white/15 text-white px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm text-center hover:border-gold/40 hover:text-gold transition-colors"
-            >
-              See How It Works
-            </Link>
-          </div>
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 border border-gold/20 px-4 py-1.5 mb-8">
+          <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
+          <span className="text-xs font-heading font-semibold uppercase tracking-[0.2em] text-gold">
+            Airbnb Arbitrage + AI
+          </span>
+        </div>
+
+        <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-black uppercase text-white leading-[0.95] mb-6 tracking-tight max-w-4xl">
+          Build a Cash-Flowing Airbnb Empire{" "}
+          <span className="text-gold">With AI.</span>
+        </h1>
+        <p className="text-lg md:text-xl text-white/50 mb-10 max-w-2xl leading-relaxed">
+          I teach entrepreneurs how to launch and scale profitable Airbnb
+          arbitrage businesses — powered by AI automation for pricing,
+          guest communication, and operations — without owning a single property.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Link
+            href="/contact"
+            className="bg-gold text-black px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm text-center hover:bg-gold-light transition-colors"
+          >
+            Book a Free Call
+          </Link>
+          <Link
+            href="/services"
+            className="border border-white/15 text-white px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm text-center hover:border-gold/40 hover:text-gold transition-colors"
+          >
+            See How It Works
+          </Link>
         </div>
       </div>
     </section>
