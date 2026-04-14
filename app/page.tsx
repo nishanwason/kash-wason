@@ -11,21 +11,21 @@ const services = [
     icon: User,
     title: "1:1 Coaching",
     description:
-      "Personalized coaching to help you build your brand, generate inbound leads, and close more deals consistently.",
+      "Personalized coaching to help you find properties, negotiate leases, and launch your first AI-automated Airbnb units.",
     href: "/services#one-on-one",
   },
   {
     icon: Users,
     title: "Group Coaching",
     description:
-      "Join a community of driven agents for peer accountability, live coaching calls, and proven growth strategies.",
+      "Join a community of ambitious hosts for peer accountability, deal reviews, and live AI setup walkthroughs.",
     href: "/services#group",
   },
   {
     icon: BookOpen,
     title: "Online Program",
     description:
-      "A self-paced program to master inbound lead generation, social media branding, and client acquisition.",
+      "A self-paced program covering Airbnb arbitrage from A to Z — plus the exact AI tools and automations I use daily.",
     href: "/services#program",
   },
 ];
@@ -40,14 +40,14 @@ export default function Home() {
       <section className="bg-navy-deep">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">
               Meet <span className="text-gold">Kash Wason</span>
             </h2>
             <p className="text-white/50 leading-relaxed mb-6">
-              Miami-based real estate coach with over a decade of experience
-              helping agents ditch cold outreach and build businesses that
-              attract clients on autopilot. Kash&apos;s no-fluff, results-driven
-              approach has helped hundreds of agents transform their careers.
+              I built a portfolio of cash-flowing Airbnb units without owning a
+              single property — then I layered in AI to automate pricing, guest
+              messaging, cleaning schedules, and reviews. Now I teach others how
+              to do the same.
             </p>
             <Link
               href="/about"
@@ -67,8 +67,8 @@ export default function Home() {
               How I Can <span className="text-gold">Help You</span>
             </h2>
             <p className="text-white/50 max-w-2xl mx-auto">
-              Whether you&apos;re a new agent or a seasoned broker, I have a
-              program designed to help you scale.
+              Whether you&apos;re launching your first unit or scaling to 20+,
+              I have a program designed to get you there faster with AI.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

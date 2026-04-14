@@ -7,7 +7,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Book a free discovery call with Kash Wason or send a message. Let's talk about scaling your real estate business.",
+    "Book a free discovery call with Kash Wason. Let's talk about launching your AI-powered Airbnb arbitrage business.",
 };
 
 const socials = [
@@ -44,13 +44,13 @@ export default function ContactPage() {
               Get In Touch
             </p>
             <h1 className="font-display text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
-              Let&apos;s Talk About{" "}
-              <span className="text-gold">Your Growth</span>
+              Let&apos;s Build Your{" "}
+              <span className="text-gold">Airbnb Empire</span>
             </h1>
             <p className="text-lg text-white/60 max-w-2xl">
               Book a free discovery call or send me a message. I&apos;ll
               personally review your situation and help you figure out the best
-              next step.
+              way to get started with Airbnb arbitrage and AI.
             </p>
           </div>
         </div>

@@ -8,8 +8,8 @@ interface CTABannerProps {
 }
 
 export default function CTABanner({
-  headline = "Ready to Scale Your Real Estate Business?",
-  subtext = "Book a free discovery call and find out how coaching can help you generate consistent inbound leads.",
+  headline = "Ready to Launch Your Airbnb Arbitrage Business?",
+  subtext = "Book a free discovery call and find out how AI-powered arbitrage can build you a cash-flowing portfolio — without owning property.",
   buttonText = "Book Your Call",
   href = "/contact",
 }: CTABannerProps) {

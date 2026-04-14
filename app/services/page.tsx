@@ -6,7 +6,7 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore Kash Wason's coaching programs — 1:1 coaching, group masterminds, and self-paced programs for real estate agents and brokers.",
+    "Explore Kash Wason's Airbnb arbitrage coaching programs — 1:1 coaching, group masterminds, and self-paced programs with AI automation.",
 };
 
 const offers = [
@@ -14,17 +14,17 @@ const offers = [
     id: "one-on-one",
     icon: User,
     title: "1:1 Coaching",
-    tagline: "Premium, Personalized Transformation",
-    who: "Agents and brokers ready to go all-in on scaling their business with dedicated, hands-on guidance.",
+    tagline: "Premium, Hands-On Arbitrage Launch",
+    who: "Entrepreneurs ready to go all-in on building their first (or next) Airbnb arbitrage units with personalized guidance.",
     includes: [
       "Weekly private coaching calls",
-      "Custom inbound lead generation strategy",
-      "Personal brand audit and content roadmap",
-      "Direct access to Kash via voice/text",
-      "Accountability check-ins and progress tracking",
+      "Market analysis and deal sourcing strategy",
+      "Landlord pitch scripts and lease negotiation support",
+      "Full AI automation setup (pricing, messaging, reviews)",
+      "Furnishing playbook and listing optimization",
     ],
     outcome:
-      "Go from inconsistent closings to a predictable pipeline of inbound leads — with a coach who's done it.",
+      "Go from zero to cash-flowing Airbnb units with a proven system and AI doing the heavy lifting on operations.",
     cta: "Apply for 1:1 Coaching",
   },
   {
@@ -32,53 +32,57 @@ const offers = [
     icon: Users,
     title: "Group Coaching & Mastermind",
     tagline: "Community-Driven Growth",
-    who: "Agents who thrive with peer accountability and want to learn alongside other high-performing professionals.",
+    who: "Hosts who thrive with peer accountability and want to scale their portfolio alongside other ambitious operators.",
     includes: [
       "Bi-weekly live group coaching calls",
-      "Private community of driven agents",
-      "Proven playbooks for content and lead gen",
-      "Hot seat coaching and live Q&A sessions",
+      "Private community of Airbnb arbitrage operators",
+      "Live deal reviews and market breakdowns",
+      "AI tool demos and implementation sessions",
       "Recordings and resource library access",
     ],
     outcome:
-      "Build your brand, close more deals, and grow alongside a community of agents who push each other to win.",
+      "Scale your portfolio faster with a community of operators who share deals, strategies, and AI workflows.",
     cta: "Join the Mastermind",
   },
   {
     id: "program",
     icon: BookOpen,
     title: "Self-Paced Online Program",
-    tagline: "Learn at Your Own Speed",
-    who: "Agents who want to learn Kash's proven strategies on their own schedule — the perfect entry point.",
+    tagline: "The Complete Arbitrage + AI Blueprint",
+    who: "Beginners who want to learn the entire Airbnb arbitrage system on their own schedule — including AI setup.",
     includes: [
-      "Complete video course library",
-      "Step-by-step content creation framework",
-      "Social media branding templates",
-      "Lead generation funnel blueprints",
-      "Lifetime access with future updates",
+      "Complete video course: arbitrage from A to Z",
+      "AI automation toolkit and setup guides",
+      "Lease negotiation templates and scripts",
+      "Furnishing checklists and supplier lists",
+      "Listing optimization templates for max bookings",
     ],
     outcome:
-      "Master the fundamentals of inbound marketing and personal branding — even before you're ready for coaching.",
+      "Master every step of Airbnb arbitrage — from finding your first deal to automating operations with AI.",
     cta: "Enroll Now",
   },
 ];
 
 const faqs = [
   {
-    q: "How do I know which program is right for me?",
-    a: "If you want personalized attention and fast results, go with 1:1 coaching. If you're self-motivated and want community, the mastermind is great. If you're just getting started, the online program gives you the foundation.",
+    q: "Do I need to own property to do this?",
+    a: "No — that's the entire point of arbitrage. You lease properties from landlords, furnish them, and list them on Airbnb. No mortgage, no down payment, no ownership required.",
   },
   {
-    q: "Do you offer refunds?",
-    a: "We stand behind our coaching. If you show up, do the work, and don't see results, we'll work with you until you do. Reach out to discuss specifics.",
+    q: "What AI tools do you teach?",
+    a: "I cover AI-powered dynamic pricing, automated guest messaging and review responses, smart cleaning coordination, market analysis tools, and custom GPT workflows for listing optimization.",
   },
   {
-    q: "What if I'm a brand new agent?",
-    a: "Even better. You'll build the right habits and brand from day one instead of having to unlearn bad ones later.",
+    q: "How much money do I need to start?",
+    a: "Typically $3K-$8K for your first unit (first month rent, deposit, furnishing). I teach strategies to minimize upfront costs and start lean.",
+  },
+  {
+    q: "Is this legal? Will landlords allow it?",
+    a: "Yes — when done correctly with full landlord approval. I teach you exactly how to pitch landlords, what to put in your lease addendum, and how to stay compliant with local regulations.",
   },
   {
     q: "How quickly will I see results?",
-    a: "Most clients start seeing inbound leads within 30-60 days of implementing the strategies. The timeline depends on your consistency and market.",
+    a: "Most students land their first unit within 30-60 days and see their first booking within the first week of going live. AI optimization kicks in immediately to maximize your revenue.",
   },
 ];
 
@@ -99,8 +103,8 @@ export default function ServicesPage() {
               <span className="text-gold">Fits Your Goals</span>
             </h1>
             <p className="text-lg text-white/60 max-w-2xl">
-              Every agent is different. That&apos;s why I offer multiple ways to
-              work together — from hands-on 1:1 coaching to self-paced learning.
+              Whether you&apos;re launching your first Airbnb unit or scaling
+              to 20+, I have a program to get you there — powered by AI.
             </p>
           </div>
         </div>

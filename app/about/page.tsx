@@ -1,34 +1,34 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Target, Zap, TrendingUp, Shield } from "lucide-react";
+import { Home, Bot, TrendingUp, Shield } from "lucide-react";
 import CTABanner from "@/components/CTABanner";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about Kash Wason — Miami-based real estate coach helping agents and brokers build authority and generate inbound leads.",
+    "Learn about Kash Wason — Airbnb arbitrage coach and AI automation expert helping entrepreneurs build cash-flowing short-term rental portfolios.",
 };
 
 const pillars = [
   {
-    icon: Target,
-    title: "Inbound-First",
-    description: "Stop chasing. Build a brand that makes clients come to you.",
+    icon: Home,
+    title: "Arbitrage-First",
+    description: "No buying property. Lease units, list on Airbnb, and profit from the spread.",
   },
   {
-    icon: Zap,
-    title: "No Fluff",
-    description: "Every strategy is battle-tested. No theory — only what works.",
+    icon: Bot,
+    title: "AI-Powered",
+    description: "Automate pricing, guest messaging, reviews, and operations with cutting-edge AI tools.",
   },
   {
     icon: TrendingUp,
-    title: "Authority Building",
-    description: "Position yourself as the go-to agent in your market through content and social proof.",
+    title: "Scale Fast",
+    description: "Systems built for growth — go from 1 unit to 10+ without burning out.",
   },
   {
     icon: Shield,
     title: "Accountability",
-    description: "Consistent support and structure to keep you executing week after week.",
+    description: "Consistent support and structure to keep you taking action week after week.",
   },
 ];
 
@@ -45,8 +45,8 @@ export default function AboutPage() {
               About Kash
             </p>
             <h1 className="font-display text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
-              From Agent to Coach —{" "}
-              <span className="text-gold">Building What I Wish I Had</span>
+              I Built an Airbnb Empire{" "}
+              <span className="text-gold">Without Owning Property</span>
             </h1>
           </div>
         </div>
@@ -57,31 +57,33 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="max-w-3xl mx-auto space-y-6 text-white/60 leading-relaxed">
             <p className="text-lg text-white/80">
-              I got into real estate the same way most people do — hungry,
-              hustling, and making a hundred cold calls a day hoping someone
-              would pick up. I built a business, but it was exhausting and
-              unsustainable.
+              I started in real estate the traditional way — grinding, cold
+              calling, chasing deals. Then I discovered Airbnb arbitrage:
+              leasing properties, furnishing them, and listing them on Airbnb
+              for profit. No mortgage. No down payment. Just cash flow.
             </p>
             <p>
-              Everything changed when I shifted my focus to building a personal
-              brand online. Instead of chasing leads, I started creating content,
-              showing up on social media, and positioning myself as an authority
-              in my market. Within months, the calls started coming to me.
+              But the real breakthrough came when I started integrating AI into
+              every part of the operation. AI-powered dynamic pricing that
+              adjusts rates in real time. Automated guest messaging that handles
+              check-ins, questions, and reviews without me lifting a finger.
+              Smart cleaning coordination. Predictive analytics for market
+              selection.
             </p>
             <p>
-              That transformation is what drives my coaching today. I realized
-              that what I&apos;d figured out through years of trial and error
-              could be packaged into a repeatable system — one that any agent
-              could follow to go from cold outreach to consistent inbound leads.
+              That combination — arbitrage plus AI — is what took me from
+              hustling with a couple units to running a scalable portfolio that
+              practically manages itself. And it&apos;s the exact system I now
+              teach to others.
             </p>
             <p>
-              Now, based in Miami, I work with agents and brokers across the
-              country to help them build the kind of business I wish I&apos;d had
-              from day one: one where clients come to you, where your brand does
-              the selling, and where you&apos;re in control of your pipeline.
+              Based in Miami, I work with aspiring and active Airbnb hosts
+              across the country. Whether you&apos;re launching your first unit
+              or trying to scale past 10, my approach gives you the playbook
+              and the technology stack to do it profitably.
             </p>
             <p className="font-heading font-bold text-gold text-lg uppercase tracking-wider">
-              No fluff. No gimmicks. Just proven strategies that work.
+              Arbitrage for the revenue. AI for the leverage.
             </p>
           </div>
         </div>
@@ -128,16 +130,16 @@ export default function AboutPage() {
               Beyond the <span className="text-gold">Business</span>
             </h2>
             <p className="text-white/50 leading-relaxed mb-8">
-              When I&apos;m not coaching, you&apos;ll find me exploring Miami&apos;s food
-              scene, at the gym, or creating content. I believe your personal
-              brand should be an authentic extension of who you are — and I
-              practice what I preach.
+              When I&apos;m not coaching or optimizing listings, you&apos;ll find me
+              exploring Miami, testing new AI tools, or creating content about
+              the future of short-term rentals. I believe in building businesses
+              that give you freedom — not just income.
             </p>
             <Link
               href="/contact"
               className="inline-block bg-gold text-navy-deep px-10 py-4 font-heading font-bold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors"
             >
-              Ready to Scale? Let&apos;s Talk
+              Ready to Start? Let&apos;s Talk
             </Link>
           </div>
         </div>

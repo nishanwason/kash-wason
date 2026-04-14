@@ -12,8 +12,8 @@ export default function Footer() {
               Kash Wason
             </h3>
             <p className="text-white/50 text-sm leading-relaxed">
-              Helping real estate agents and brokers scale their business through
-              proven coaching and inbound lead strategies.
+              Helping entrepreneurs launch and scale profitable Airbnb arbitrage
+              businesses powered by AI automation.
             </p>
           </div>
 

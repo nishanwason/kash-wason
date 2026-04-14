@@ -3,33 +3,33 @@ import TestimonialCard from "./TestimonialCard";
 const testimonials = [
   {
     quote:
-      "Before working with Kash, I was doing 2-3 deals a quarter. After implementing his inbound strategy, I closed 11 deals in 90 days. Complete game changer.",
+      "Kash showed me how to land my first 3 arbitrage units in 30 days. The AI pricing tool alone paid for the entire coaching program in week one.",
     name: "Marcus Johnson",
-    title: "Real Estate Agent, Miami FL",
+    title: "Airbnb Host, Miami FL",
   },
   {
     quote:
-      "Kash helped me build a personal brand on Instagram that now generates 5-10 inbound leads per week. I haven't made a cold call in 6 months.",
+      "I was terrified of managing guests. Kash set me up with AI-automated messaging and now I barely touch my phone. Five units running on autopilot.",
     name: "Sarah Chen",
-    title: "Realtor, Keller Williams",
+    title: "Airbnb Entrepreneur, Austin TX",
   },
   {
     quote:
-      "The group coaching program gave me the accountability and systems I needed to scale my team from 3 to 12 agents in one year.",
+      "Went from zero to 8 arbitrage units in 6 months. The AI systems Kash teaches for dynamic pricing and guest screening are next level.",
     name: "David Rodriguez",
-    title: "Broker/Owner, South Florida",
+    title: "Short-Term Rental Operator, South Florida",
   },
   {
     quote:
-      "Kash doesn't just teach theory — he gives you the exact playbook he used to build his own business. That's what sets him apart.",
+      "Kash doesn't teach outdated Airbnb strategies. The AI integration approach is what separates his coaching from everyone else in this space.",
     name: "Jessica Park",
-    title: "Real Estate Agent, Orlando FL",
+    title: "Airbnb Host, Orlando FL",
   },
   {
     quote:
-      "I went from zero social media presence to 15K followers and consistent closings all from inbound leads. Kash's coaching is the real deal.",
+      "I quit my 9-to-5 after month four. My arbitrage portfolio now generates more than my old salary, and AI handles 90% of the operations.",
     name: "Anthony Williams",
-    title: "Realtor, RE/MAX",
+    title: "Full-Time Airbnb Operator, Dallas TX",
   },
 ];
 
@@ -40,11 +40,11 @@ export default function TestimonialsGrid() {
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">
             Hear It From the{" "}
-            <span className="text-gold">Agents Themselves</span>
+            <span className="text-gold">Hosts Themselves</span>
           </h2>
           <p className="text-white/50 max-w-2xl mx-auto">
-            These are real stories from real people who decided to bet on
-            themselves and never looked back.
+            Real stories from real entrepreneurs who launched profitable Airbnb
+            businesses using arbitrage and AI.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

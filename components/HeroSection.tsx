@@ -113,20 +113,20 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-2 border border-gold/30 rounded-none px-4 py-1.5 mb-8">
             <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
             <span className="text-xs font-heading font-semibold uppercase tracking-[0.2em] text-gold">
-              Real Estate Coaching
+              Airbnb Arbitrage + AI
             </span>
           </div>
 
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black uppercase text-white leading-[0.95] mb-6 tracking-tight">
-            Stop Chasing
+            Build a Cash-Flowing
             <br />
-            Leads.{" "}
-            <span className="text-gold">Start Attracting Them.</span>
+            Airbnb Empire{" "}
+            <span className="text-gold">With AI.</span>
           </h1>
           <p className="text-lg md:text-xl text-white/60 mb-10 max-w-2xl leading-relaxed">
-            I help real estate agents and brokers build authority online,
-            generate consistent inbound leads, and scale their business — without
-            the cold calls and door knocking.
+            I teach entrepreneurs how to launch and scale profitable Airbnb
+            arbitrage businesses — powered by AI automation for pricing,
+            guest communication, and operations — without owning a single property.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link

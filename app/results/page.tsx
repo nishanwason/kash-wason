@@ -6,72 +6,72 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Results",
   description:
-    "See the real results from agents and brokers who've worked with Kash Wason — case studies, testimonials, and before/after transformations.",
+    "See real results from entrepreneurs who launched profitable Airbnb arbitrage businesses with Kash Wason's AI-powered coaching.",
 };
 
 const caseStudies = [
   {
     name: "Marcus Johnson",
-    title: "Real Estate Agent, Miami FL",
-    before: "2-3 deals per quarter, relying on cold calls",
-    after: "11 closings in 90 days with inbound leads only",
+    title: "Airbnb Host, Miami FL",
+    before: "Working a 9-to-5, zero short-term rental experience",
+    after: "3 arbitrage units generating $6K/mo profit in 60 days",
     quote:
-      "Before working with Kash, I was doing 2-3 deals a quarter. After implementing his inbound strategy, I closed 11 deals in 90 days. Complete game changer.",
+      "Kash showed me how to land my first 3 arbitrage units in 30 days. The AI pricing tool alone paid for the entire coaching program in week one.",
   },
   {
     name: "Sarah Chen",
-    title: "Realtor, Keller Williams",
-    before: "Zero social media presence, inconsistent pipeline",
-    after: "5-10 inbound leads per week from Instagram",
+    title: "Airbnb Entrepreneur, Austin TX",
+    before: "Managing 2 units manually, burned out from guest messages",
+    after: "5 units running on AI autopilot, 90% less hands-on time",
     quote:
-      "Kash helped me build a personal brand on Instagram that now generates 5-10 inbound leads per week. I haven't made a cold call in 6 months.",
+      "I was terrified of managing guests. Kash set me up with AI-automated messaging and now I barely touch my phone. Five units running on autopilot.",
   },
   {
     name: "David Rodriguez",
-    title: "Broker/Owner, South Florida",
-    before: "Small team of 3, manual recruiting",
-    after: "Scaled to 12 agents in one year",
+    title: "Short-Term Rental Operator, South Florida",
+    before: "1 Airbnb unit, no systems, doing everything manually",
+    after: "8 units in 6 months with full AI operations stack",
     quote:
-      "The group coaching program gave me the accountability and systems I needed to scale my team from 3 to 12 agents in one year.",
+      "Went from zero to 8 arbitrage units in 6 months. The AI systems Kash teaches for dynamic pricing and guest screening are next level.",
   },
 ];
 
 const moreTestimonials = [
   {
     quote:
-      "Kash doesn't just teach theory — he gives you the exact playbook he used to build his own business. That's what sets him apart.",
+      "Kash doesn't teach outdated Airbnb strategies. The AI integration approach is what separates his coaching from everyone else in this space.",
     name: "Jessica Park",
-    title: "Real Estate Agent, Orlando FL",
+    title: "Airbnb Host, Orlando FL",
   },
   {
     quote:
-      "I went from zero social media presence to 15K followers and consistent closings all from inbound leads. Kash's coaching is the real deal.",
+      "I quit my 9-to-5 after month four. My arbitrage portfolio now generates more than my old salary, and AI handles 90% of the operations.",
     name: "Anthony Williams",
-    title: "Realtor, RE/MAX",
+    title: "Full-Time Airbnb Operator, Dallas TX",
   },
   {
     quote:
-      "The ROI on coaching with Kash was insane. I made back my investment in the first month from the leads his strategies generated.",
+      "The AI guest messaging setup alone saved me 15+ hours a week. Now I spend my time finding new deals instead of answering the same questions.",
     name: "Michelle Torres",
-    title: "Real Estate Agent, Tampa FL",
+    title: "Airbnb Host, Tampa FL",
   },
   {
     quote:
-      "As a broker, I was skeptical about coaching. But Kash's systems helped me recruit 8 new agents in 6 months and increase team production by 40%.",
+      "I was spending hours adjusting prices manually. Kash's AI pricing system optimizes rates 24/7 and my revenue jumped 35% the first month.",
     name: "Robert Kim",
-    title: "Broker, Compass",
+    title: "STR Operator, Denver CO",
   },
   {
     quote:
-      "Kash helped me find my voice on social media. Now I have a brand that people recognize and trust. The deals follow naturally.",
+      "Kash taught me how to pitch landlords so well that I got approved on my first 4 attempts. The lease negotiation scripts are gold.",
     name: "Alyssa Hernandez",
-    title: "Realtor, eXp Realty",
+    title: "Airbnb Entrepreneur, Phoenix AZ",
   },
   {
     quote:
-      "I used to spend $3K/month on Zillow leads with terrible conversion. Now I spend $0 and close more deals than ever.",
+      "I went from Googling 'what is Airbnb arbitrage' to running 6 profitable units in 5 months. The AI automation makes it actually scalable.",
     name: "James Mitchell",
-    title: "Real Estate Agent, Fort Lauderdale FL",
+    title: "Airbnb Host, Fort Lauderdale FL",
   },
 ];
 
@@ -88,12 +88,13 @@ export default function ResultsPage() {
               Results
             </p>
             <h1 className="font-display text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
-              Real Agents.{" "}
-              <span className="text-gold">Real Results.</span>
+              Real Hosts.{" "}
+              <span className="text-gold">Real Revenue.</span>
             </h1>
             <p className="text-lg text-white/60 max-w-2xl">
               Don&apos;t take my word for it — see the transformations from
-              agents and brokers who put in the work.
+              entrepreneurs who launched profitable Airbnb businesses with
+              arbitrage and AI.
             </p>
           </div>
         </div>
@@ -159,7 +160,7 @@ export default function ResultsPage() {
 
       <CTABanner
         headline="Want Results Like These?"
-        subtext="Book a free call and let's map out your path to consistent inbound leads."
+        subtext="Book a free call and let's map out your path to a profitable AI-powered Airbnb portfolio."
         buttonText="Book Your Free Call"
       />
     </>

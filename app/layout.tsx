@@ -24,16 +24,16 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Kash Wason | Real Estate Coaching",
+    default: "Kash Wason | Airbnb Arbitrage + AI Coaching",
     template: "%s | Kash Wason",
   },
   description:
-    "Stop chasing leads. Start attracting them. Kash Wason helps real estate agents and brokers scale their business through proven coaching programs.",
+    "Build a cash-flowing Airbnb empire without owning property. Kash Wason teaches Airbnb arbitrage powered by AI automation.",
   metadataBase: new URL("https://kash-wason.vercel.app"),
   openGraph: {
-    title: "Kash Wason | Real Estate Coaching",
+    title: "Kash Wason | Airbnb Arbitrage + AI Coaching",
     description:
-      "Stop chasing leads. Start attracting them. Kash Wason helps real estate agents and brokers scale their business.",
+      "Build a cash-flowing Airbnb empire without owning property. Airbnb arbitrage powered by AI automation.",
     url: "https://kash-wason.vercel.app",
     siteName: "Kash Wason",
     type: "website",

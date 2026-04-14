@@ -1,20 +1,20 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { Flame, Target, Rocket } from "lucide-react";
+import { Home, Bot, TrendingUp } from "lucide-react";
 
 const highlights = [
   {
-    icon: Flame,
-    text: "Miami-Based Real Estate Coach",
+    icon: Home,
+    text: "Airbnb Arbitrage Expert",
   },
   {
-    icon: Target,
-    text: "Inbound Lead Generation Expert",
+    icon: Bot,
+    text: "AI-Powered Automation Systems",
   },
   {
-    icon: Rocket,
-    text: "Helping Agents Build Authority & Scale",
+    icon: TrendingUp,
+    text: "Helping Hosts Scale Without Owning Property",
   },
 ];
 
