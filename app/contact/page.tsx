@@ -43,7 +43,7 @@ export default function ContactPage() {
             <p className="text-gold font-heading font-bold text-xs uppercase tracking-[0.2em] mb-3">
               Get In Touch
             </p>
-            <h1 className="font-heading text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
+            <h1 className="font-display text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
               Let&apos;s Talk About{" "}
               <span className="text-gold">Your Growth</span>
             </h1>
@@ -59,7 +59,7 @@ export default function ContactPage() {
       {/* Booking */}
       <section className="bg-dark">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
-          <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-8 text-center">
+          <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-8 text-center">
             Schedule Your <span className="text-gold">Free Call</span>
           </h2>
           <BookingEmbed />
@@ -72,7 +72,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Form */}
             <div>
-              <h2 className="font-heading text-2xl font-black text-white uppercase tracking-wider mb-6">
+              <h2 className="font-display text-2xl font-black text-white uppercase tracking-wider mb-6">
                 Send a <span className="text-gold">Message</span>
               </h2>
               <ContactForm />
@@ -80,7 +80,7 @@ export default function ContactPage() {
 
             {/* Info */}
             <div>
-              <h2 className="font-heading text-2xl font-black text-white uppercase tracking-wider mb-6">
+              <h2 className="font-display text-2xl font-black text-white uppercase tracking-wider mb-6">
                 Other Ways to <span className="text-gold">Reach Me</span>
               </h2>
 

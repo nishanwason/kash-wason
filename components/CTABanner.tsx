@@ -21,7 +21,7 @@ export default function CTABanner({
       <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/60 to-transparent" />
 
       <div className="relative max-w-6xl mx-auto px-4 py-16 md:py-20 text-center">
-        <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">
+        <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">
           {headline}
         </h2>
         <p className="text-white/50 max-w-2xl mx-auto mb-8">{subtext}</p>

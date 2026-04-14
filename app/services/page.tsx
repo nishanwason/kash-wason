@@ -94,7 +94,7 @@ export default function ServicesPage() {
             <p className="text-gold font-heading font-bold text-xs uppercase tracking-[0.2em] mb-3">
               Work With Me
             </p>
-            <h1 className="font-heading text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
+            <h1 className="font-display text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
               Choose the Path That{" "}
               <span className="text-gold">Fits Your Goals</span>
             </h1>
@@ -120,7 +120,7 @@ export default function ServicesPage() {
                   <offer.icon className="text-gold" size={24} />
                 </div>
                 <div>
-                  <h2 className="font-heading text-2xl md:text-3xl font-black text-white uppercase tracking-wider">
+                  <h2 className="font-display text-2xl md:text-3xl font-black text-white uppercase tracking-wider">
                     {offer.title}
                   </h2>
                   <p className="text-gold font-heading font-semibold text-sm uppercase tracking-wider">
@@ -175,7 +175,7 @@ export default function ServicesPage() {
       {/* FAQ */}
       <section className="bg-navy-deep">
         <div className="max-w-3xl mx-auto px-4 py-20 md:py-24">
-          <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-12 text-center">
+          <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-12 text-center">
             Frequently Asked <span className="text-gold">Questions</span>
           </h2>
           <div className="space-y-4">

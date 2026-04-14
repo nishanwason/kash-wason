@@ -117,7 +117,7 @@ export default function HeroSection() {
             </span>
           </div>
 
-          <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-black uppercase text-white leading-[0.95] mb-6 tracking-tight">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black uppercase text-white leading-[0.95] mb-6 tracking-tight">
             Stop Chasing
             <br />
             Leads.{" "}

@@ -63,7 +63,7 @@ export default function Home() {
       <section className="bg-dark">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
           <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-4">
               How I Can <span className="text-gold">Help You</span>
             </h2>
             <p className="text-white/50 max-w-2xl mx-auto">

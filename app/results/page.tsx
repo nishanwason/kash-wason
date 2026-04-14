@@ -87,7 +87,7 @@ export default function ResultsPage() {
             <p className="text-gold font-heading font-bold text-xs uppercase tracking-[0.2em] mb-3">
               Results
             </p>
-            <h1 className="font-heading text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
+            <h1 className="font-display text-4xl md:text-6xl font-black text-white uppercase tracking-tight leading-[0.95] mb-6">
               Real Agents.{" "}
               <span className="text-gold">Real Results.</span>
             </h1>
@@ -102,7 +102,7 @@ export default function ResultsPage() {
       {/* Case Studies */}
       <section className="bg-dark">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
-          <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-12 text-center">
+          <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-12 text-center">
             Client <span className="text-gold">Transformations</span>
           </h2>
           <div className="space-y-8">
@@ -146,7 +146,7 @@ export default function ResultsPage() {
       {/* More Testimonials */}
       <section className="bg-navy-deep">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
-          <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-12 text-center">
+          <h2 className="font-display text-3xl md:text-4xl font-black text-white uppercase tracking-wider mb-12 text-center">
             More Client <span className="text-gold">Wins</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
