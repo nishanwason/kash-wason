@@ -117,10 +117,6 @@ export default function HeroSection() {
           </span>
         </div>
 
-        <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-black uppercase text-white leading-[0.95] mb-6 tracking-tight max-w-4xl">
-          Build a Cash-Flowing Airbnb Empire{" "}
-          <span className="text-gold">With AI.</span>
-        </h1>
         <p className="text-lg md:text-xl text-white/50 mb-10 max-w-2xl leading-relaxed">
           I teach entrepreneurs how to launch and scale profitable Airbnb
           arbitrage businesses — powered by AI automation for pricing,
